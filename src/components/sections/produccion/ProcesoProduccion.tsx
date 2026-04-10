@@ -35,7 +35,7 @@ export default function ProcesoProduccion() {
 
         {/* Desktop: horizontal, Mobile: vertical */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-4">
-          {pasos.map((paso, i) => (
+          {pasos.map((paso) => (
             <div key={paso.numero} className="relative flex flex-col">
               {/* Línea conectora desktop */}
 
