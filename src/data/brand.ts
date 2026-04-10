@@ -21,7 +21,7 @@ export const brand = {
     },
     lineas: {
         produccion: {
-            nombre: 'Producción y Rental',
+            nombre: 'Producción de eventos',
             slug: '/produccion',
             hero: 'Tu evento, nuestro problema.',
             descripcion: 'Nos encargamos de todo: técnica, catering, seguridad, artistas y contenido. Vos aparecés a disfrutarlo.',
@@ -45,10 +45,10 @@ export const brand = {
         { nombre: 'Casino Santa Fe', linea: 'instalaciones' },
         { nombre: 'Festival de Guadalupe', linea: 'produccion' },
         { nombre: 'Sindicato CUEC', linea: 'instalaciones' },
+        { nombre: 'BAHCO', linea: 'instalaciones' },
         { nombre: 'Sindicato ASOEM', linea: 'instalaciones' },
         { nombre: 'RAEX', linea: 'instalaciones' },
         { nombre: 'REMAX FARO', linea: 'instalaciones' },
-        { nombre: 'BAHCO', linea: 'instalaciones' },
         { nombre: 'Universidad Catolica', linea: 'instalaciones' },
         { nombre: 'Colegio adoratrices', linea: 'instalaciones' },
         { nombre: 'Universidad Catolica', linea: 'instalaciones' },

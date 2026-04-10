@@ -19,7 +19,7 @@ const tipos = [
   },
   {
     imagen: images.espacios.boliche,
-    titulo: 'Boliches y venues',
+    titulo: 'Boliches y espacios nocturnos',
     descripcion: 'Sistemas de alto impacto sonoro con manejo de zonas.',
   },
   {
@@ -46,22 +46,27 @@ export default function TiposProyecto() {
           {tipos.map((t) => (
             <div
               key={t.titulo}
-              className="bg-brand-darkgray border-t-2 border-brand-steel hover:border-brand-orange transition-colors duration-200 rounded-sm overflow-hidden group"
+              className="bg-brand-darkgray border-t-4 border-brand-steel hover:border-brand-orange hover:bg-[#1a1a1a] hover:-translate-y-1 hover:shadow-lg transition-all duration-200 rounded-sm overflow-hidden group"
             >
-              <div className="relative h-40">
-                <Image
-                  src={t.imagen}
-                  alt={t.titulo}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-darkgray to-transparent" />
+              {/* Imagen — imagen + degradado escalan juntos */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="absolute inset-0 group-hovernp:scale-105 transition-transform duration-300">
+                  <Image
+                    src={t.imagen}
+                    alt={t.titulo}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                </div>
               </div>
-              <div className="p-6">
+
+              {/* Contenido — sube levemente sobre la imagen */}
+              <div className="p-6 -mt-6 relative z-10 bg-brand-darkgray group-hover:bg-[#1a1a1a] transition-colors duration-200">
                 <h3 className="text-white font-body font-bold text-lg mb-2">
                   {t.titulo}
                 </h3>
-                <p className="text-[#CCCCCC] font-body text-sm leading-relaxed">
+                <p className="text-white/80 font-body text-sm leading-relaxed">
                   {t.descripcion}
                 </p>
               </div>

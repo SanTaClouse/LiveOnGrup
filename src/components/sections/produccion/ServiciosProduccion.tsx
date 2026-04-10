@@ -9,18 +9,18 @@ const servicios = [
   },
   {
     imagen: images.servicios.contenido,
-    titulo: 'Producción de contenido',
-    descripcion: 'Pantallas, visuales, dirección creativa del show.',
+    titulo: 'Producción',
+    descripcion: 'Pantallas, visuales, dirección creativa .',
   },
   {
     imagen: images.servicios.artistas,
-    titulo: 'Artistas y shows',
+    titulo: 'Artistas y shows en vivo',
     descripcion: 'Gestión, contratación y logística de artistas.',
   },
   {
     imagen: images.servicios.catering,
     titulo: 'Catering',
-    descripcion: 'Coordinación de servicios gastronómicos a medida.',
+    descripcion: 'Coordinación de servicios gastronómicos.',
   },
   {
     imagen: images.servicios.seguridad,

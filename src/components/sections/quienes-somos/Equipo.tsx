@@ -9,9 +9,9 @@ const miembros = [
     imagen: images.equipo.persona1,
   },
   {
-    nombre: '[Nombre]',
+    nombre: 'Matias',
     rol: 'Dirección Comercial',
-    bio: 'Placeholder — confirmar con el cliente.',
+    bio: 'Placeholder — confirmar luego.',
     imagen: images.equipo.persona2,
   },
 ] as const

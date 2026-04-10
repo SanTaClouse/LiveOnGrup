@@ -17,7 +17,7 @@ export default function HeroInstalaciones() {
       />
       <div className="absolute inset-0 bg-brand-steel/80" />
 
-      <div className="relative z-10 px-4 md:px-8 max-w-4xl mx-auto w-full text-center lg:text-left">
+      <div className="relative z-10 px-4 py-24 md:px-8 max-w-4xl mx-auto w-full text-center lg:text-left">
         <p className="text-brand-orange font-body font-semibold text-sm uppercase tracking-widest mb-6">
           {linea.nombre}
         </p>

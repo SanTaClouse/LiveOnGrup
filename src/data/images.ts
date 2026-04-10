@@ -17,12 +17,12 @@ export const images = {
   },
 
   servicios: {
-    sonido: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=75',
+    sonido: 'https://images.unsplash.com/photo-1506704888326-3b8834edb40a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     contenido: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=75',
     artistas: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&q=75',
     catering: 'https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=75',
-    seguridad: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=75',
-    logistica: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=75',
+    seguridad: 'https://images.unsplash.com/photo-1581568736305-49a04e012c13?q=80&w=647&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    logistica: 'https://images.unsplash.com/photo-1616432043562-3671ea2e5242?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 
   espacios: {
@@ -40,7 +40,7 @@ export const images = {
   },
 
   equipo: {
-    persona1: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=75',
-    persona2: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=75',
+    persona1: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1775834281/borrarpablo_tx5qrm.jpg',
+    persona2: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1775834281/borrar_mati_f61mik.jpg',
   },
 } as const

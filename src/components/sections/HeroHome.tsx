@@ -16,7 +16,7 @@ export default function HeroHome() {
       />
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 max-w-4xl mx-auto w-full text-center lg:text-left px-4 md:px-8">
+      <div className="relative z-10 max-w-4xl mx-auto w-full text-center lg:text-left px-4 py-24 md:px-8">
         <p className="text-gray-300 font-body text-sm uppercase tracking-widest mb-6">
           {brand.tagline}
         </p>

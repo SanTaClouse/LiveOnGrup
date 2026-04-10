@@ -3,19 +3,19 @@ const diferenciales = [
     numero: '01',
     titulo: 'Criterio de 30 años',
     descripcion:
-      'No mandamos presupuestos para que otros ejecuten. Definimos la solución y la llevamos a cabo nosotros.',
+      'Definimos la solución y la llevamos a cabo con criterio y experiencia.',
   },
   {
     numero: '02',
     titulo: 'Responsabilidad total',
     descripcion:
-      'Producción o instalación: el proyecto es nuestro de principio a fin. Sin intermediarios ni excusas.',
+      'Producción o instalación: el proyecto es nuestro de principio a fin. Sin intermediarios.',
   },
   {
     numero: '03',
     titulo: 'Clientes que vuelven',
     descripcion:
-      'El Casino Santa Fe, el Festival de Guadalupe y muchos más confían en nosotros hace años. Eso no se compra.',
+      'El Casino Santa Fe, el Festival de Guadalupe y muchos más confían en nosotros cada años.',
   },
 ] as const
 
