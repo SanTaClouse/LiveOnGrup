@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #111111;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #FF6600;
+    border-radius: 3px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* CTA Button — naranja, solo este elemento usa naranja como fondo */
+  .btn-primary {
+    @apply bg-brand-orange text-white font-body font-bold text-base px-6 py-3 rounded-sm hover:bg-orange-500 active:scale-95 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange;
+  }
+
+  /* Botón secundario — outline naranja */
+  .btn-secondary {
+    @apply border border-brand-orange text-brand-orange font-body font-bold text-base px-6 py-3 rounded-sm hover:bg-brand-orange hover:text-white transition-all duration-200;
+  }
+
+  /* Heading estilo de marca */
+  .heading-display {
+    @apply font-heading text-display font-extrabold text-white leading-tight;
+  }
+
+  .heading-title {
+    @apply font-heading text-title font-extrabold text-brand-orange;
+  }
+
+  /* Sección estándar */
+  .section {
+    @apply px-4 py-16 md:px-8 md:py-24 max-w-6xl mx-auto;
+  }
+
+  /* Barra de acento naranja vertical */
+  .accent-bar {
+    @apply w-1 h-8 bg-brand-orange inline-block mr-3 rounded-full;
+  }
+
+  /* Inputs de formulario */
+  .input-brand {
+    @apply w-full bg-brand-darkgray border border-brand-midgray
+           text-white placeholder-gray-500
+           px-4 py-3 rounded-sm
+           focus:outline-none focus:border-brand-orange
+           transition-colors duration-200;
+  }
+
+  .select-brand {
+    @apply input-brand appearance-none cursor-pointer;
   }
 }
