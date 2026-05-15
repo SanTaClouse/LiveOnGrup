@@ -9,7 +9,7 @@ export default function JsonLd() {
     description: brand.description,
     url: brand.url,
     telephone: '',
-    email: brand.contact.info,
+    email: brand.contact.oficial,
     image: `${brand.url}/og-image.jpg`,
     logo: `${brand.url}/images/logo.png`,
     address: {
@@ -23,8 +23,7 @@ export default function JsonLd() {
       name: 'Santa Fe, Argentina',
     },
     sameAs: [
-      brand.social.instagram_eventos,
-      brand.social.instagram_instalaciones,
+      brand.social.instagram,
     ],
     makesOffer: [
       {

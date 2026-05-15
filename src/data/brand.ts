@@ -6,14 +6,10 @@ export const brand = {
     description: 'Producción de eventos llave en mano e instalaciones de audio profesional en Santa Fe, Argentina.',
     url: 'https://liveongroup.com.ar',
     contact: {
-        ventas: 'ventas@liveongroup.com',
-        info: 'info@liveongroup.com',
-        tecnica: 'tecnica@liveongroup.com',
-        contenido: 'contenido@liveongroup.com',
+        oficial: 'liveongroup.oficial@gmail.com',
     },
     social: {
-        instagram_eventos: 'https://instagram.com/liveongroup.eventos',
-        instagram_instalaciones: 'https://instagram.com/liveongroup.instalaciones',
+        instagram: 'https://www.instagram.com/liveongroup/',
     },
     trayectoria: {
         aniosEmpresa: 8,

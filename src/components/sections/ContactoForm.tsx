@@ -4,7 +4,11 @@ import { useForm, ValidationError } from '@formspree/react'
 import { useSearchParams } from 'next/navigation'
 import { brand } from '@/data/brand'
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID ?? ''
+const rawId = process.env.NEXT_PUBLIC_FORMSPREE_ID ?? ''
+// Detectamos placeholders obvios (xxx..., todos caracteres iguales) para que el
+// form muestre el fallback en vez de fallar al postear a un endpoint inexistente.
+const isPlaceholder = !rawId || /^x+$/i.test(rawId) || rawId.length < 6
+const FORMSPREE_ID = isPlaceholder ? '' : rawId
 
 function FallbackMail() {
   return (
@@ -16,10 +20,10 @@ function FallbackMail() {
         Escribinos directamente y te respondemos en el día:
       </p>
       <a
-        href={`mailto:${brand.contact.info}`}
+        href={`mailto:${brand.contact.oficial}`}
         className="btn-primary inline-block"
       >
-        {brand.contact.info}
+        {brand.contact.oficial}
       </a>
     </div>
   )

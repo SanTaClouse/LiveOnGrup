@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
+import SiteChrome from '@/components/layout/SiteChrome'
 import JsonLd from '@/components/seo/JsonLd'
 import './globals.css'
 
@@ -64,9 +63,7 @@ export default function RootLayout({
     <html lang="es-AR" className={`${inter.variable} ${nunito.variable}`}>
       <body className="bg-brand-black text-white font-body antialiased">
         <JsonLd />
-        <Navbar />
-        <main className="pt-16">{children}</main>
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
         <Analytics />
       </body>
     </html>
