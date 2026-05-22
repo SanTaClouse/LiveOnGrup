@@ -27,7 +27,7 @@ export default function HeroHome() {
         </h1>
 
         <p className="text-[#CCCCCC] font-body text-lg mb-10 max-w-xl mx-auto lg:mx-0">
-          Producción de eventos y instalaciones de audio en Santa Fe, Argentina.
+          Producción Integral de Eventos , Desarrollo de Proyectos Audio Visuales e Iluminación Arquitectural y escénica en Santa Fe, Argentina.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

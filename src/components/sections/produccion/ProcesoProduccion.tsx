@@ -21,7 +21,7 @@ const pasos = [
     numero: '04',
     nombre: 'El evento',
     descripcion:
-      'Estamos presentes de principio a fin. Vos disfrutás — nosotros operamos.',
+      'Estamos presentes de principio a fin. ',
   },
 ] as const
 

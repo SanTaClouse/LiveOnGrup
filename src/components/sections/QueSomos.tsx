@@ -8,13 +8,11 @@ export default function QueSomos() {
         </div>
 
         <p className="text-[#CCCCCC] font-body text-lg md:text-xl leading-relaxed mb-6">
-          No somos una empresa de sonido. Somos la productora que organiza tu
-          evento de cero — y la empresa que diseña e instala el sistema de audio
-          que tu espacio necesita.
+          Somos una Empresa  productora de Eventos con amplia experiencia en el sector.
         </p>
 
         <p className="text-[#777777] font-body text-sm uppercase tracking-widest">
-          Más de 30 años de criterio técnico en Santa Fe.
+          Desarrollamos tu proyecto y acompañamos en cada etapa del mismo para lograr éxito y calidad en cada proceso.
         </p>
       </div>
     </section>

@@ -10,9 +10,9 @@ const cards = [
   {
     bg: 'bg-brand-black',
     label: 'PRODUCCIÓN Y RENTAL',
-    titulo: 'Tu evento, nuestro problema.',
+    titulo: 'Tu evento, nuestro desafío.',
     descripcion:
-      'Organizamos el evento completo: catering, seguridad, técnica, contenido y artistas. Vos delegás — nosotros entregamos.',
+      'Organizamos Eventos completos: Técnica, Contenidos Catering, Seguridad y Contratacion de Artistas. Vos delegas — nosotros resolvemos.',
     items: [
       'Eventos llave en mano',
       'Gestión de artistas',
@@ -28,8 +28,8 @@ const cards = [
     descripcion:
       'Inspeccionamos, definimos el sistema y ejecutamos la instalación completa. Sin intermediarios.',
     items: [
-      'Restaurants, teatros y auditorios',
-      'Acústica profesional',
+      'Restaurantes. Teatros. Auditorios. Audio Comercial',
+      'Desarrollamos estudios y proyectos en Acústica profesional',
       'Asesoramiento y venta',
     ],
     cta: 'Ver Instalaciones completo →',

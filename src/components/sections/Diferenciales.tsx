@@ -1,7 +1,7 @@
 const diferenciales = [
   {
     numero: '01',
-    titulo: 'Criterio de 30 años',
+    titulo: 'Mas de  30 años de experiencia en el rubro.',
     descripcion:
       'Definimos la solución y la llevamos a cabo con criterio y experiencia.',
   },
@@ -9,7 +9,7 @@ const diferenciales = [
     numero: '02',
     titulo: 'Responsabilidad total',
     descripcion:
-      'Producción o instalación: el proyecto es nuestro de principio a fin. Sin intermediarios.',
+      'Producción o instalación: el proyecto es nuestro de principio a fin.',
   },
   {
     numero: '03',

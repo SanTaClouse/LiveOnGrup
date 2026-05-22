@@ -12,7 +12,7 @@ const valores = [
   {
     titulo: 'Trayectoria que respalda cada decisión',
     descripcion:
-      '30+ años de oficio detrás de cada propuesta técnica. La experiencia no se improvisa.',
+      '30+ años de oficio detrás de cada propuesta técnica. ',
   },
   {
     titulo: 'Confianza ganada, no declarada',
