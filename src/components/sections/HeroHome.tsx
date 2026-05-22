@@ -11,7 +11,7 @@ export default function HeroHome() {
         src={images.heroes.home}
         alt="Evento en vivo con luces profesionales"
         fill
-        className="object-cover"
+        className="object-cover opacity-30"
         priority
       />
       <div className="absolute inset-0 bg-black/70" />

@@ -3,16 +3,16 @@ import { images } from '@/data/images'
 
 const miembros = [
   {
+    nombre: 'Matias',
+    rol: 'Dirección Comercial',
+    bio: 'Amplia experiencia en Marketing Liderar equipos y Recursos Humanos ',
+    imagen: images.equipo.persona2,
+  },
+  {
     nombre: 'Pablo',
     rol: 'Dirección Técnica',
     bio: '30+ años de experiencia en instalaciones y sonido en vivo.',
     imagen: images.equipo.persona1,
-  },
-  {
-    nombre: 'Matias',
-    rol: 'Dirección Comercial',
-    bio: 'Placeholder — confirmar luego.',
-    imagen: images.equipo.persona2,
   },
 ] as const
 
