@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -23,8 +24,19 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-black border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="font-heading font-extrabold text-xl text-white">
-          {brand.name}
+        <Link
+          href="/"
+          aria-label={`${brand.name} — inicio`}
+          className="rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-orange"
+        >
+          <Image
+            src="/images/logos/LiveOnGroup-blanco.svg"
+            alt={brand.name}
+            width={180}
+            height={60}
+            priority
+            className="h-9 w-auto md:h-10"
+          />
         </Link>
 
         {/* Desktop links */}
@@ -35,7 +47,7 @@ export default function Navbar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`text-sm font-body transition-colors ${
+                  className={`text-sm font-body transition-colors rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-orange ${
                     isActive
                       ? 'text-brand-orange border-b-2 border-brand-orange pb-1'
                       : 'text-gray-300 hover:text-white'
@@ -50,7 +62,7 @@ export default function Navbar() {
 
         {/* Hamburger button */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+          className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-orange"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={menuOpen}
@@ -84,7 +96,7 @@ export default function Navbar() {
                   <Link
                     href={href}
                     onClick={() => setMenuOpen(false)}
-                    className={`block py-2 text-base font-body transition-colors ${
+                    className={`block py-2 text-base font-body transition-colors rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange ${
                       isActive ? 'text-brand-orange' : 'text-gray-300 hover:text-white'
                     }`}
                   >

@@ -7,15 +7,15 @@ const linea = brand.lineas.instalaciones
 
 export default function HeroInstalaciones() {
   return (
-    <section className="relative min-h-screen bg-brand-steel flex flex-col justify-center">
+    <section className="relative min-h-[calc(100vh-4rem)] bg-brand-steel flex flex-col justify-center">
       <Image
         src={images.heroes.instalaciones}
         alt="Equipo de audio profesional en venue"
         fill
-        className="object-cover"
+        className="object-cover object-[48%_20%]"
         priority
       />
-      <div className="absolute inset-0 bg-brand-steel/80" />
+      <div className="absolute inset-0 bg-gradient-to-t from-brand-steel/95 via-brand-steel/65 to-brand-steel/30" />
 
       <div className="relative z-10 px-4 py-24 md:px-8 max-w-4xl mx-auto w-full text-center lg:text-left">
         <p className="text-brand-orange font-body font-semibold text-sm uppercase tracking-widest mb-6">

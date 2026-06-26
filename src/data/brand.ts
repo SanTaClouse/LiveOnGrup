@@ -7,6 +7,9 @@ export const brand = {
     url: 'https://liveongroup.com.ar',
     contact: {
         oficial: 'liveongroup.oficial@gmail.com',
+        // Solo dígitos para el link wa.me (país 54 + 9 de celular + área + número)
+        whatsapp: '5493425328222',
+        whatsappDisplay: '+54 9 3425 32-8222',
     },
     social: {
         instagram: 'https://www.instagram.com/liveongroup/',
@@ -33,24 +36,7 @@ export const brand = {
             color: '#1C3A4A',
         },
     },
-    clientes_destacados: [
-        // Los clientes suelen ser clientes en general y lo vamos a incluir en el home y quiza en ambas paginas indistintamente
-        // La idea sería NO DISCRIMINAR POR TIPO DE CLIENTE
-        // Encontrar una forma de mostrar los clientes, crear un banner que se pueda reutilizar
-        // El banner deberá extraer los clientes desde un array que tendrá (nombre,url,logoimg)
-        { nombre: 'Casino Santa Fe', linea: 'instalaciones' },
-        { nombre: 'Festival de Guadalupe', linea: 'produccion' },
-        { nombre: 'Sindicato CUEC', linea: 'instalaciones' },
-        { nombre: 'BAHCO', linea: 'instalaciones' },
-        { nombre: 'Sindicato ASOEM', linea: 'instalaciones' },
-        { nombre: 'RAEX', linea: 'instalaciones' },
-        { nombre: 'REMAX FARO', linea: 'instalaciones' },
-        { nombre: 'Universidad Catolica', linea: 'instalaciones' },
-        { nombre: 'Colegio adoratrices', linea: 'instalaciones' },
-        { nombre: 'Universidad Catolica', linea: 'instalaciones' },
-        { nombre: 'Restaurante Sumatra', linea: 'instalaciones' },
-        { nombre: 'Restaurante Don García', linea: 'instalaciones' },
-        { nombre: 'Restaurante La rural', linea: 'instalaciones' }
-        // sindicato cuec, sindicato asoem, eli ruscciti, remax faro, bhaco, colegio adoratrices, univ catolica
-    ],
+    // Los clientes viven en una única fuente reutilizable: src/data/clientes.ts
+    // (con nombre, url y logoUrl). Se muestran sin discriminar por línea de negocio
+    // mediante el componente <ClientesBanner />.
 } as const

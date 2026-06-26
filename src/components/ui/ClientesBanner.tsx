@@ -4,7 +4,7 @@ import { clientes, Cliente } from '@/data/clientes'
 interface Props {
   /** 'marquee' → scroll infinito automático | 'grid' → grilla estática */
   variant?: 'marquee' | 'grid'
-  /** Texto sobre el banner. Default: 'Confían en nosotros' */
+  /** Texto sobre el banner. Default: 'Confían en nosotros'. Pasar '' para ocultarlo (cuando la sección ya tiene su propio título). */
   label?: string
 }
 
@@ -45,14 +45,29 @@ function MarqueeBanner({ label }: { label: string }) {
 
   return (
     <div>
-      <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-8">
-        {label}
-      </p>
+      {label && (
+        <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-8">
+          {label}
+        </p>
+      )}
+
+      {/* Mobile: scroll horizontal nativo (fluido, sin animación que trabe) */}
+      <div className="md:hidden -mx-4 px-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+        <div className="flex w-max">
+          {clientes.map((cliente) => (
+            <div key={cliente.nombre} className="snap-start">
+              <ClienteItem cliente={cliente} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop: marquee automático */}
       <div
-        className="relative overflow-hidden"
+        className="hidden md:block relative overflow-hidden"
         style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}
       >
-        <div className="flex animate-marquee">
+        <div className="flex animate-marquee will-change-transform">
           {items.map((cliente, i) => (
             <ClienteItem key={`${cliente.nombre}-${i}`} cliente={cliente} />
           ))}
@@ -67,9 +82,11 @@ function MarqueeBanner({ label }: { label: string }) {
 function GridBanner({ label }: { label: string }) {
   return (
     <div>
-      <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-10">
-        {label}
-      </p>
+      {label && (
+        <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-10">
+          {label}
+        </p>
+      )}
       <div className="flex flex-wrap justify-center">
         {clientes.map((cliente) => (
           <ClienteItem key={cliente.nombre} cliente={cliente} />

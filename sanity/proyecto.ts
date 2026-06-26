@@ -144,6 +144,13 @@ export default defineType({
       initialValue: true,
     }),
     defineField({
+      name: 'destacadoHome',
+      type: 'boolean',
+      title: '¿Mostrar en la portada?',
+      description: 'Si está activado, este proyecto aparece en la sección destacada del inicio. Recomendado: elegir solo 3.',
+      initialValue: false,
+    }),
+    defineField({
       name: 'orden',
       type: 'number',
       title: 'Orden de aparición',

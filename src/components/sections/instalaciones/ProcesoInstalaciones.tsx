@@ -34,13 +34,8 @@ export default function ProcesoInstalaciones() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-4">
-          {pasos.map((paso, i) => (
+          {pasos.map((paso) => (
             <div key={paso.numero} className="relative flex flex-col">
-              {/* Línea conectora desktop */}
-              {i < pasos.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full border-t-2 border-dashed border-brand-orange/40 z-0" />
-              )}
-
               <p className="text-brand-orange font-heading text-5xl font-extrabold mb-3">
                 {paso.numero}
               </p>

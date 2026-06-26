@@ -11,17 +11,17 @@ export const images = {
     // Concierto/evento con luces — multitud y escenario
     home: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779462194/Asoem_pantallas_by7c7j.png',
     // Producción de evento — stage con luces profesionales
-    produccion: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80',
+    produccion: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1782484910/691ea3a2-ec2e-40c7-90e8-dfb82ba53579.png',
     // Instalación de audio — equipo de sonido profesional en venue
-    instalaciones: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1920&q=80',
+    instalaciones: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779463338/9bea0e3c-bf6a-4140-b6c0-2f8f0db71d1b.png',
   },
 
   servicios: {
-    sonido: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779462504/IMG_4773_rwstc4.jpg',
+    sonido: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779463338/9bea0e3c-bf6a-4140-b6c0-2f8f0db71d1b.png',
     contenido: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779462194/Asoem_pantallas_by7c7j.png',
     artistas: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779462873/92c18643-a714-4e16-b271-d440ea6f4238.png',
     catering: 'https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=75',
-    seguridad: 'https://images.unsplash.com/photo-1581568736305-49a04e012c13?q=80&w=647&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    seguridad: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1782485081/d89eb2d9-9260-4ba2-99ae-0d6286daecc2.png',
     logistica: 'https://res.cloudinary.com/dlw9ocu3b/image/upload/v1779463109/82358566-ae16-41b1-94de-8223970ed5d8.png',
   },
 

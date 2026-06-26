@@ -56,6 +56,21 @@ export async function getTodosLosProyectos(): Promise<Proyecto[]> {
   )
 }
 
+/** Proyectos marcados como destacados en la portada (máx. 3), ordenados */
+export async function getProyectosDestacados(): Promise<Proyecto[]> {
+  const query = /* groq */ `
+    *[_type == "proyecto" && publicado == true && destacadoHome == true]
+      | order(orden asc)[0...3] {
+      ${proyectoProjection}
+    }
+  `
+  return client.fetch<Proyecto[]>(
+    query,
+    {},
+    { next: { revalidate: REVALIDATE_SECONDS } },
+  )
+}
+
 /** Todos los proyectos publicados de una línea, ordenados */
 export async function getProyectosByLinea(linea: Proyecto['linea']): Promise<Proyecto[]> {
   const query = /* groq */ `

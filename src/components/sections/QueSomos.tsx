@@ -11,7 +11,7 @@ export default function QueSomos() {
           Somos una Empresa  productora de Eventos con amplia experiencia en el sector.
         </p>
 
-        <p className="text-[#777777] font-body text-sm uppercase tracking-widest">
+        <p className="text-gray-400 font-body text-sm uppercase tracking-widest">
           Desarrollamos tu proyecto y acompañamos en cada etapa del mismo para lograr éxito y calidad en cada proceso.
         </p>
       </div>
