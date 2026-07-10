@@ -12,7 +12,7 @@ const valores = [
   {
     titulo: 'Trayectoria que respalda cada decisión',
     descripcion:
-      '30+ años de oficio detrás de cada propuesta técnica. ',
+      '30+ años de oficio detrás de cada propuesta técnica.',
   },
   {
     titulo: 'Confianza ganada, no declarada',
@@ -30,7 +30,10 @@ export default function Valores() {
   return (
     <section className="bg-brand-darkgray py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="heading-title mb-12">Nuestros valores</h2>
+        <h2 className="heading-title mb-12">
+          <span className="accent-bar" aria-hidden="true" />
+          Nuestros valores
+        </h2>
 
         <div className="space-y-6">
           {valores.map((v) => (
@@ -41,7 +44,7 @@ export default function Valores() {
               <h3 className="text-white font-body font-bold text-lg mb-2">
                 {v.titulo}
               </h3>
-              <p className="text-[#CCCCCC] font-body leading-relaxed">
+              <p className="text-brand-muted font-body leading-relaxed">
                 {v.descripcion}
               </p>
             </div>

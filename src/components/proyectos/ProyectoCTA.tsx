@@ -24,7 +24,7 @@ export default function ProyectoCTA({ linea }: { linea: LineaDeNegocio }) {
       <h2 className="font-heading text-white text-3xl md:text-4xl mb-4">
         {titulo}
       </h2>
-      <p className="text-gray-400 font-body mb-8 max-w-xl mx-auto">
+      <p className="text-brand-faint font-body mb-8 max-w-xl mx-auto">
         {subtitulo}
       </p>
       <Link href={href} className="btn-primary">

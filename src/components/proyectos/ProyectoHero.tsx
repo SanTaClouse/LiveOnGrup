@@ -21,10 +21,10 @@ export default function ProyectoHero({ proyecto }: { proyecto: Proyecto }) {
         <h1 className="font-heading text-white text-4xl md:text-5xl lg:text-6xl mt-2 mb-3">
           {proyecto.titulo}
         </h1>
-        <p className="text-gray-300 text-lg md:text-xl font-body">
+        <p className="text-brand-muted text-lg md:text-xl font-body">
           {proyecto.subtitulo}
         </p>
-        <p className="text-brand-midgray text-sm mt-2 font-body">
+        <p className="text-brand-faint text-sm mt-2 font-body">
           📍 {proyecto.ubicacion}
         </p>
       </div>

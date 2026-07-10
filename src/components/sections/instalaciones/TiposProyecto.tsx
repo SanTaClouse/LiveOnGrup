@@ -39,6 +39,7 @@ export default function TiposProyecto() {
     <section className="bg-brand-black py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="heading-title mb-12">
+          <span className="accent-bar" aria-hidden="true" />
           ¿En qué tipo de espacio trabajamos?
         </h2>
 
@@ -46,11 +47,11 @@ export default function TiposProyecto() {
           {tipos.map((t) => (
             <div
               key={t.titulo}
-              className="bg-brand-darkgray border-t-4 border-brand-steel hover:border-brand-orange hover:bg-[#1a1a1a] hover:-translate-y-1 hover:shadow-lg transition-all duration-200 rounded-sm overflow-hidden group"
+              className="bg-brand-darkgray border border-white/10 hover:border-brand-orange/40 hover:bg-[#1a1a1a] hover:-translate-y-1 hover:shadow-lg transition-all duration-200 rounded-sm overflow-hidden group"
             >
               {/* Imagen — imagen + degradado escalan juntos */}
               <div className="relative aspect-[16/10] overflow-hidden">
-                <div className="absolute inset-0 group-hovernp:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src={t.imagen}
                     alt={t.titulo}
@@ -66,7 +67,7 @@ export default function TiposProyecto() {
                 <h3 className="text-white font-body font-bold text-lg mb-2">
                   {t.titulo}
                 </h3>
-                <p className="text-white/80 font-body text-sm leading-relaxed">
+                <p className="text-brand-muted font-body text-sm leading-relaxed">
                   {t.descripcion}
                 </p>
               </div>

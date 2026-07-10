@@ -21,7 +21,7 @@ const pasos = [
     numero: '04',
     nombre: 'El evento',
     descripcion:
-      'Estamos presentes de principio a fin. ',
+      'Estamos presentes de principio a fin.',
   },
 ] as const
 
@@ -35,17 +35,21 @@ export default function ProcesoProduccion() {
 
         {/* Desktop: horizontal, Mobile: vertical */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-4">
-          {pasos.map((paso) => (
+          {pasos.map((paso, i) => (
             <div key={paso.numero} className="relative flex flex-col">
-              {/* Línea conectora desktop */}
-
-              <p className="text-brand-orange font-heading text-5xl font-extrabold mb-3">
-                {paso.numero}
-              </p>
+              <div className="flex items-center gap-4 mb-3">
+                <p className="text-brand-orange font-heading text-5xl font-extrabold">
+                  {paso.numero}
+                </p>
+                {/* Línea conectora hacia el paso siguiente (solo desktop) */}
+                {i < pasos.length - 1 && (
+                  <span aria-hidden="true" className="hidden lg:block flex-1 h-px bg-white/10" />
+                )}
+              </div>
               <h3 className="text-white font-heading text-xl font-extrabold mb-2">
                 {paso.nombre}
               </h3>
-              <p className="text-[#CCCCCC] font-body text-sm leading-relaxed">
+              <p className="text-brand-muted font-body text-sm leading-relaxed">
                 {paso.descripcion}
               </p>
             </div>

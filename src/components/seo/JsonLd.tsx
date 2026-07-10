@@ -9,7 +9,7 @@ export default function JsonLd() {
     description: brand.description,
     url: brand.url,
     telephone: '',
-    email: brand.contact.oficial,
+    email: brand.contact.ventas,
     image: `${brand.url}/og-image.jpg`,
     logo: `${brand.url}/images/logo.png`,
     address: {

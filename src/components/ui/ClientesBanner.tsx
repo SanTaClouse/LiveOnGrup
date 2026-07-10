@@ -46,7 +46,7 @@ function MarqueeBanner({ label }: { label: string }) {
   return (
     <div>
       {label && (
-        <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-8">
+        <p className="text-brand-faint font-body text-sm font-medium tracking-wide text-center mb-8">
           {label}
         </p>
       )}
@@ -83,7 +83,7 @@ function GridBanner({ label }: { label: string }) {
   return (
     <div>
       {label && (
-        <p className="text-white/60 font-body text-sm font-medium tracking-wide text-center mb-10">
+        <p className="text-brand-faint font-body text-sm font-medium tracking-wide text-center mb-10">
           {label}
         </p>
       )}

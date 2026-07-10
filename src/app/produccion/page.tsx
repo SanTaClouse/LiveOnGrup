@@ -23,9 +23,12 @@ export default async function ProduccionPage() {
       <ProcesoProduccion />
 
       <section className="bg-brand-darkgray py-16 md:py-24 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-title mb-4">Eventos que produjimos</h2>
-          <p className="text-gray-400 font-body mb-10">Cada evento, documentado.</p>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="heading-title mb-4">
+            <span className="accent-bar" aria-hidden="true" />
+            Eventos que produjimos
+          </h2>
+          <p className="text-brand-faint font-body mb-10">Cada evento, documentado.</p>
           <ProyectoGrid proyectos={proyectos} />
         </div>
       </section>

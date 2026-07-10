@@ -6,7 +6,7 @@ export default function CTAFinal() {
       <h2 className="font-heading text-title font-extrabold text-white mb-4">
         ¿Tenés un proyecto en mente?
       </h2>
-      <p className="text-[#CCCCCC] font-body mb-8 max-w-md mx-auto">
+      <p className="text-brand-muted font-body mb-8 max-w-md mx-auto">
         Contanos qué necesitás y te respondemos en menos de 24 horas.
       </p>
       <Link href="/contacto" className="btn-primary inline-block">

@@ -1,7 +1,7 @@
 const diferenciales = [
   {
     numero: '01',
-    titulo: 'Mas de  30 años de experiencia en el rubro.',
+    titulo: 'Más de 30 años de experiencia en el rubro.',
     descripcion:
       'Definimos la solución y la llevamos a cabo con criterio y experiencia.',
   },
@@ -31,7 +31,7 @@ export default function Diferenciales() {
             <h3 className="text-white font-heading text-xl font-extrabold mb-3">
               {d.titulo}
             </h3>
-            <p className="text-[#CCCCCC] font-body leading-relaxed">
+            <p className="text-brand-muted font-body leading-relaxed">
               {d.descripcion}
             </p>
           </div>

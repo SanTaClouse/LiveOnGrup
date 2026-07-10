@@ -55,7 +55,7 @@ export default function Lightbox({ imagenes, initialIndex, onClose }: Props) {
           className="object-contain max-h-[85vh] w-full"
           priority
         />
-        <p className="text-gray-400 text-sm text-center mt-3 font-body">
+        <p className="text-brand-muted text-sm text-center mt-3 font-body">
           {imagen.alt}
         </p>
       </div>
@@ -91,7 +91,7 @@ export default function Lightbox({ imagenes, initialIndex, onClose }: Props) {
             </svg>
           </button>
 
-          <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-500 text-sm font-body">
+          <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-brand-faint text-sm font-body">
             {current + 1} / {imagenes.length}
           </span>
         </>

@@ -67,6 +67,20 @@
     scroll-behavior: smooth;
   }
 
+  /* Selección de texto en color de marca (mismo gesto que el scrollbar) */
+  ::selection {
+    background-color: #FF6600;
+    color: #FFFFFF;
+  }
+
+  /* Evita viudas en títulos y ríos feos en párrafos */
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
   /* Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
@@ -86,7 +100,7 @@
 
   /* CTA Button — naranja, solo este elemento usa naranja como fondo */
   .btn-primary {
-    @apply bg-brand-orange text-white font-body font-bold text-base px-6 py-3 rounded-sm hover:bg-orange-500 active:scale-95 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange;
+    @apply bg-brand-orange text-white font-body font-bold text-base px-6 py-3 rounded-sm hover:bg-brand-orange-hover active:scale-95 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-orange;
   }
 
   /* Botón secundario — outline naranja */
@@ -99,8 +113,10 @@
     @apply font-heading text-display font-extrabold text-white leading-tight;
   }
 
+  /* Títulos de sección en blanco: el naranja queda reservado para acentos
+     (accent-bar, eyebrows, números y CTAs) */
   .heading-title {
-    @apply font-heading text-title font-extrabold text-brand-orange;
+    @apply font-heading text-title font-extrabold text-white;
   }
 
   /* Sección estándar */
@@ -110,13 +126,13 @@
 
   /* Barra de acento naranja vertical */
   .accent-bar {
-    @apply w-1 h-8 bg-brand-orange inline-block mr-3 rounded-full;
+    @apply w-1 h-8 bg-brand-orange inline-block align-middle mr-3 rounded-full;
   }
 
   /* Inputs de formulario */
   .input-brand {
     @apply w-full bg-brand-darkgray border border-brand-midgray
-           text-white placeholder-gray-500
+           text-white placeholder-brand-faint
            px-4 py-3 rounded-sm
            focus:outline-none focus:border-brand-orange
            transition-colors duration-200;

@@ -31,10 +31,12 @@ export default function ProyectoCard({ proyecto, destacado = false }: Props) {
         />
       </div>
 
+      {/* En touch no hay hover: el contenido queda siempre visible en mobile
+          y se revela con hover recién en md+ */}
       <div className="
         absolute inset-0
         bg-gradient-to-t from-black/90 via-black/40 to-transparent
-        opacity-0 group-hover:opacity-100
+        opacity-100 md:opacity-0 md:group-hover:opacity-100
         transition-opacity duration-300
         flex flex-col justify-end p-6
       ">
@@ -44,7 +46,7 @@ export default function ProyectoCard({ proyecto, destacado = false }: Props) {
         <h3 className="font-heading text-white text-xl lg:text-2xl leading-tight mb-1">
           {proyecto.titulo}
         </h3>
-        <p className="text-gray-300 text-sm font-body line-clamp-2">
+        <p className="text-brand-muted text-sm font-body line-clamp-2">
           {proyecto.subtitulo}
         </p>
         <span className="inline-flex items-center gap-2 mt-4 text-brand-orange text-sm font-body font-semibold">
@@ -55,7 +57,7 @@ export default function ProyectoCard({ proyecto, destacado = false }: Props) {
         </span>
       </div>
 
-      <span className="absolute top-3 right-3 bg-black/60 text-gray-400 text-xs font-body px-2 py-1 rounded">
+      <span className="absolute top-3 right-3 bg-black/60 text-brand-faint text-xs font-body px-2 py-1 rounded">
         {proyecto.anio}
       </span>
     </Link>

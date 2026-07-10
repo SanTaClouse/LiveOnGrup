@@ -10,7 +10,7 @@ const servicios = [
   {
     imagen: images.servicios.contenido,
     titulo: 'Producción',
-    descripcion: 'Pantallas, visuales, dirección creativa .',
+    descripcion: 'Pantallas, visuales, dirección creativa.',
   },
   {
     imagen: images.servicios.artistas,
@@ -38,13 +38,16 @@ export default function ServiciosProduccion() {
   return (
     <section className="bg-brand-darkgray py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="heading-title mb-12">Todo incluido</h2>
+        <h2 className="heading-title mb-12">
+          <span className="accent-bar" aria-hidden="true" />
+          Todo incluido
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicios.map((s) => (
             <div
               key={s.titulo}
-              className="bg-brand-black border-l-4 border-brand-orange rounded-sm overflow-hidden"
+              className="bg-brand-black border border-white/10 rounded-sm overflow-hidden hover:border-brand-orange/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
             >
               <div className="relative h-40">
                 <Image
@@ -59,7 +62,7 @@ export default function ServiciosProduccion() {
                 <h3 className="text-white font-body font-bold text-lg mb-2">
                   {s.titulo}
                 </h3>
-                <p className="text-[#CCCCCC] font-body text-sm leading-relaxed">
+                <p className="text-brand-muted font-body text-sm leading-relaxed">
                   {s.descripcion}
                 </p>
               </div>

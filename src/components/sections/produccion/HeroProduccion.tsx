@@ -2,12 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { brand } from '@/data/brand'
 import { images } from '@/data/images'
+import ScrollIndicator from '@/components/ui/ScrollIndicator'
 
 const linea = brand.lineas.produccion
 
 export default function HeroProduccion() {
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] bg-brand-black flex flex-col justify-center">
+    <section className="relative min-h-[70vh] bg-brand-black flex flex-col justify-center">
       <Image
         src={images.heroes.produccion}
         alt="Escenario de evento con iluminación profesional"
@@ -26,7 +27,7 @@ export default function HeroProduccion() {
           {linea.hero}
         </h1>
 
-        <p className="text-[#CCCCCC] font-body text-lg mb-10 max-w-[60ch] mx-auto lg:mx-0">
+        <p className="text-brand-muted font-body text-lg mb-10 max-w-[60ch] mx-auto lg:mx-0">
           {linea.descripcion}
         </p>
 
@@ -35,18 +36,7 @@ export default function HeroProduccion() {
         </Link>
       </div>
 
-      <div className="relative z-10 mt-auto pb-8 flex justify-center">
-        <svg
-          className="w-6 h-6 text-brand-orange animate-bounce"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-          aria-hidden="true"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+      <ScrollIndicator />
     </section>
   )
 }

@@ -7,11 +7,11 @@ export default function QueSomos() {
           <span className="accent-bar" />
         </div>
 
-        <p className="text-[#CCCCCC] font-body text-lg md:text-xl leading-relaxed mb-6">
-          Somos una Empresa  productora de Eventos con amplia experiencia en el sector.
+        <p className="text-brand-muted font-body text-lg md:text-xl leading-relaxed mb-6">
+          Somos una empresa productora de eventos con amplia experiencia en el sector.
         </p>
 
-        <p className="text-gray-400 font-body text-sm uppercase tracking-widest">
+        <p className="text-brand-faint font-body text-sm uppercase tracking-widest">
           Desarrollamos tu proyecto y acompañamos en cada etapa del mismo para lograr éxito y calidad en cada proceso.
         </p>
       </div>

@@ -6,7 +6,9 @@ export const brand = {
     description: 'Producción de eventos llave en mano e instalaciones de audio profesional en Santa Fe, Argentina.',
     url: 'https://liveongroup.com.ar',
     contact: {
-        oficial: 'liveongroup.oficial@gmail.com',
+        // Correos profesionales por área — ventas es además el correo oficial/público de la empresa
+        ventas: 'ventas@liveongroup.com.ar',
+        tecnica: 'tecnica@liveongroup.com.ar',
         // Solo dígitos para el link wa.me (país 54 + 9 de celular + área + número)
         whatsapp: '5493425328222',
         whatsappDisplay: '+54 9 3425 32-8222',

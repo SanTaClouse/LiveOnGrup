@@ -9,7 +9,7 @@ export default function ProyectoContenido({ proyecto }: { proyecto: Proyecto }) 
         {/* Descripción */}
         <div className="md:col-span-2 space-y-4">
           {parrafos.map((p, i) => (
-            <p key={i} className="text-gray-300 font-body leading-relaxed">
+            <p key={i} className="text-brand-muted font-body leading-relaxed">
               {p}
             </p>
           ))}
@@ -22,19 +22,19 @@ export default function ProyectoContenido({ proyecto }: { proyecto: Proyecto }) 
           </h2>
           <dl className="space-y-3">
             <div>
-              <dt className="text-brand-midgray text-xs font-body uppercase tracking-widest">Año</dt>
+              <dt className="text-brand-faint text-xs font-body uppercase tracking-widest">Año</dt>
               <dd className="text-white font-body mt-0.5">{proyecto.anio}</dd>
             </div>
             <div>
-              <dt className="text-brand-midgray text-xs font-body uppercase tracking-widest">Ubicación</dt>
+              <dt className="text-brand-faint text-xs font-body uppercase tracking-widest">Ubicación</dt>
               <dd className="text-white font-body mt-0.5">{proyecto.ubicacion}</dd>
             </div>
             <div>
-              <dt className="text-brand-midgray text-xs font-body uppercase tracking-widest">Categoría</dt>
+              <dt className="text-brand-faint text-xs font-body uppercase tracking-widest">Categoría</dt>
               <dd className="text-white font-body mt-0.5 capitalize">{proyecto.categoria}</dd>
             </div>
             <div>
-              <dt className="text-brand-midgray text-xs font-body uppercase tracking-widest">Línea</dt>
+              <dt className="text-brand-faint text-xs font-body uppercase tracking-widest">Línea</dt>
               <dd className="text-white font-body mt-0.5 capitalize">{proyecto.linea}</dd>
             </div>
           </dl>

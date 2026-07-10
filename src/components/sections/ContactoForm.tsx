@@ -16,14 +16,14 @@ function FallbackMail() {
       <p className="text-white font-heading text-xl mb-2">
         El formulario está temporalmente fuera de servicio.
       </p>
-      <p className="text-gray-400 mb-4">
+      <p className="text-brand-faint mb-4">
         Escribinos directamente y te respondemos en el día:
       </p>
       <a
-        href={`mailto:${brand.contact.oficial}`}
+        href={`mailto:${brand.contact.ventas}`}
         className="btn-primary inline-block"
       >
-        {brand.contact.oficial}
+        {brand.contact.ventas}
       </a>
     </div>
   )
@@ -38,7 +38,7 @@ function FormWithFormspree({ defaultTipo, linea }: { defaultTipo: string; linea:
         <p className="text-brand-orange font-heading text-2xl">
           ¡Mensaje recibido!
         </p>
-        <p className="text-gray-400 mt-2">
+        <p className="text-brand-faint mt-2">
           Te respondemos en menos de 24 horas hábiles.
         </p>
       </div>

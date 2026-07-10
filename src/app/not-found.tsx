@@ -9,7 +9,7 @@ export default function NotFound() {
             <h1 className="font-heading text-display text-white mb-6">
                 Esta página no existe.
             </h1>
-            <p className="text-gray-400 font-body mb-8 max-w-md">
+            <p className="text-brand-faint font-body mb-8 max-w-md">
                 Puede que la hayamos movido, o que el link esté roto. Volvé al inicio y seguimos desde ahí.
             </p>
             <Link href="/" className="btn-primary">Volver al inicio</Link>

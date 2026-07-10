@@ -12,27 +12,27 @@ const cards = [
     label: 'PRODUCCIÓN Y RENTAL',
     titulo: 'Tu evento, nuestro desafío.',
     descripcion:
-      'Organizamos Eventos completos: Técnica, Contenidos Catering, Seguridad y Contratacion de Artistas. Vos delegas — nosotros resolvemos.',
+      'Organizamos eventos completos: técnica, contenidos, catering, seguridad y contratación de artistas. Vos delegás — nosotros resolvemos.',
     items: [
       'Eventos llave en mano',
       'Gestión de artistas',
       'Técnica y producción',
     ],
-    cta: 'Ver Producción completa →',
+    cta: 'Ver Producción completa',
     href: '/produccion',
   },
   {
-    bg: 'bg-brand-steel',
+    bg: 'bg-brand-darkgray',
     label: 'INSTALACIONES Y VENTA',
     titulo: 'El sonido correcto para cada espacio.',
     descripcion:
       'Inspeccionamos, definimos el sistema y ejecutamos la instalación completa. Sin intermediarios.',
     items: [
-      'Restaurantes. Teatros. Auditorios. Audio Comercial',
-      'Desarrollamos estudios y proyectos en Acústica profesional',
+      'Restaurantes. Teatros. Auditorios. Audio comercial',
+      'Desarrollamos estudios y proyectos en acústica profesional',
       'Asesoramiento y venta',
     ],
-    cta: 'Ver Instalaciones completo →',
+    cta: 'Ver Instalaciones completo',
     href: '/instalaciones',
   },
 ] as const
@@ -53,21 +53,30 @@ export default function LineasDeNegocio() {
             {card.titulo}
           </h2>
 
-          <p className="text-[#CCCCCC] font-body mb-6 leading-relaxed">
+          <p className="text-brand-muted font-body mb-6 leading-relaxed">
             {card.descripcion}
           </p>
 
           <ul className="space-y-3 mb-8">
             {card.items.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[#CCCCCC] font-body">
+              <li key={item} className="flex items-start gap-3 text-brand-muted font-body">
                 {checkIcon}
                 {item}
               </li>
             ))}
           </ul>
 
-          <Link href={card.href} className="btn-primary inline-block">
+          <Link href={card.href} className="btn-primary group inline-flex items-center gap-2">
             {card.cta}
+            <svg
+              className="w-4 h-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </Link>
         </div>
       ))}

@@ -3,9 +3,9 @@ import { images } from '@/data/images'
 
 const miembros = [
   {
-    nombre: 'Matias',
+    nombre: 'Matías',
     rol: 'Dirección Comercial',
-    bio: 'Amplia experiencia en Marketing Liderar equipos y Recursos Humanos ',
+    bio: 'Amplia experiencia en marketing, liderar equipos y recursos humanos.',
     imagen: images.equipo.persona2,
   },
   {
@@ -20,7 +20,10 @@ export default function Equipo() {
   return (
     <section className="bg-brand-black py-16 md:py-24 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="heading-title mb-12">El equipo</h2>
+        <h2 className="heading-title mb-12">
+          <span className="accent-bar" aria-hidden="true" />
+          El equipo
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {miembros.map((m) => (
@@ -39,7 +42,7 @@ export default function Equipo() {
               <p className="text-brand-orange font-body text-sm uppercase tracking-widest mb-2">
                 {m.rol}
               </p>
-              <p className="text-[#CCCCCC] font-body text-sm">
+              <p className="text-brand-muted font-body text-sm">
                 {m.bio}
               </p>
             </div>

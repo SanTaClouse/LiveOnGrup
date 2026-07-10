@@ -10,7 +10,7 @@ export default function HeroQuienes() {
           No somos una empresa de sonido.
         </h1>
 
-        <p className="text-[#CCCCCC] font-body text-lg md:text-xl leading-relaxed">
+        <p className="text-brand-muted font-body text-lg md:text-xl leading-relaxed">
           Somos la productora que organiza tu evento de cero — y la empresa que
           diseña el sistema de audio que tu espacio necesita.
         </p>

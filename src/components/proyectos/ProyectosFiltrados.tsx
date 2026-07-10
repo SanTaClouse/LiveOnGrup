@@ -45,12 +45,12 @@ export default function ProyectosFiltrados({ proyectos }: { proyectos: Proyecto[
                 uppercase tracking-widest transition-colors
                 ${isActive
                   ? 'bg-brand-orange text-brand-black'
-                  : 'bg-brand-darkgray text-gray-300 hover:bg-brand-darkgray/70 hover:text-white'
+                  : 'bg-brand-darkgray text-brand-muted hover:bg-brand-darkgray/70 hover:text-white'
                 }
               `}
             >
               {label}
-              <span className={`text-xs ${isActive ? 'text-brand-black/70' : 'text-brand-midgray'}`}>
+              <span className={`text-xs ${isActive ? 'text-brand-black/70' : 'text-brand-faint'}`}>
                 {counts[value]}
               </span>
             </button>

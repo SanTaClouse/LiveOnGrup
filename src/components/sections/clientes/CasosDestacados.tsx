@@ -47,7 +47,7 @@ export default function CasosDestacados() {
                 <h3 className="text-white font-heading font-extrabold text-2xl mb-3">
                   {caso.nombre}
                 </h3>
-                <p className="text-[#CCCCCC] font-body leading-relaxed mb-4">
+                <p className="text-brand-muted font-body leading-relaxed mb-4">
                   {caso.descripcion}
                 </p>
                 {caso.relacion && (
@@ -60,7 +60,7 @@ export default function CasosDestacados() {
           ))}
         </div>
 
-        <p className="text-[#777777] font-body text-xs text-center mt-10">
+        <p className="text-brand-faint font-body text-xs text-center mt-10">
           *Logos y casos publicados con autorización del cliente
         </p>
       </div>
